@@ -1,7 +1,9 @@
 Crafty.c('bananaAnimations', {
     bananaAnimations : function() {
         this.onHit("player", function() {
+           sc['sfx'].startSfx('banana', 1, 0.1);
            this.destroy();
+           //sc['sfx'].stopSfx('banana');
         });
        return this;
     }

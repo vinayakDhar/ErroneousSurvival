@@ -17,6 +17,5 @@ Test = BaseEntity.extend({
           
           }
       }
-
     }
 });

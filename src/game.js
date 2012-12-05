@@ -13,6 +13,7 @@ window.onload = function() {
 		require([
 	         "src/sprites.js?v="+version+"",
 	         "src/config.js?v="+version+"",
+	         "src/audio/sounds.js?v="+version+"",
 	], function() {
 		// Create Sprites
 		var sprites = new Sprites();
