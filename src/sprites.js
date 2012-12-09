@@ -26,12 +26,30 @@ Sprites = Backbone.Model.extend({
                      'banana' : [4, 0]
                  }
             },
+            'tiles' : {
+                 'file' : 'web/images/tiles.png',
+                 'tile' : 32,
+                 'tileh' : 32,
+                 'elements': {
+                     'metalfloor2d' : [0, 0],
+                     'metalwall2d' : [0, 1],
+                     'background2d' : [0, 10]
+                 }
+            },
+            'rayRun' : {
+                 'file' : 'web/images/rayRun.png',
+                 'tile' : 39,
+                 'tileh' : 43,
+                 'elements': {
+                     'ray' : [0, 0]
+                 }
+            },
             'isoRoad' : {
                  'file' : 'web/images/png/road.png',
                  'tile' : 100,
                  'tileh' : 65,
                  'elements': {
-                     'road' : [0, 0]
+                     'isoroad' : [0, 0]
                  }
             }
         }

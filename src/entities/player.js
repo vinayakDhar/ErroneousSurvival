@@ -5,7 +5,7 @@ Player = BaseEntity.extend({
     initialize: function(){
     	var model = this;
     	var entity = Crafty.e("2D, "+gameContainer.conf.get('renderType')+", Multiway," +
-                             "Keyboard, player, SpriteAnimation, Mouse, Collision, MouseHover, LeftControls, Animations, LeftActionControls");
+                             "Keyboard, player, SpriteAnimation, Mouse, Collision, MouseHover, LeftControls, Animations, LeftActionControls, WiredHitBox");
 
     	entity
             .attr({x: ((Crafty.viewport.width/2) - (entity.w/2)), y: 0, z: 300})

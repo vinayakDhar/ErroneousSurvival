@@ -7,9 +7,9 @@ Info = BaseEntity.extend({
     	var entity = Crafty.e("2D, DOM, Text");
 
     	entity
-            .attr({x: 50, y: 50, z: 1000, w: 400})
+            .attr({x: 50, y: 150, z: 1000, w: 400})
             .text(model.get('text'))
-            .textColor('#F00')
+            .textColor('#FFF')
             .textFont({'size' : '24px', 'family': 'Arial'})
             .bind('Click', function(){
                                 

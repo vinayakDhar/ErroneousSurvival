@@ -23,7 +23,7 @@ window.onload = function() {
 		gameContainer['conf'] = new Config({});
 
     //start Crafty
-	  Crafty.init(gameContainer.conf.get('height'), gameContainer.conf.get('width'));
+	  Crafty.init(gameContainer.conf.get('width'), gameContainer.conf.get('height'));
 	  Crafty.canvas.init(); // required for Canvas
 		
 		//the loading screen - that will be display while assets loaded
@@ -35,7 +35,7 @@ window.onload = function() {
 			var loadingText = Crafty.e("2D, "+gameContainer.conf.get('renderType')+", Text")
 					.attr({w: 500, h: 20, x: ((Crafty.viewport.width) / 2), y: (Crafty.viewport.height / 2), z: 2})
 					.text('Loading...')
-					.textColor('#000')
+					.textColor('#FFF')
 					.textFont({'size' : '24px', 'family': 'Arial'});
 		
 			// load takes an array of assets and a callback when complete
@@ -45,6 +45,7 @@ window.onload = function() {
                     "src/components/MouseHover.js?v="+version+"",
                     "src/components/KeyBoard.js?v="+version+"",
                     "src/components/PlayerAnimations.js?v="+version+"",
+                    "src/components/Box2dWeb.js?v="+version+"",
                     "src/entities/base/BaseEntity.js?v="+version+""
 	    		];
 
@@ -64,6 +65,7 @@ window.onload = function() {
 		// declare all scenes
 		var scenes = [
 			"src/scenes/main.js?v="+version+"",
+			"src/scenes/test2d.js?v="+version+""
 		];
 		
 		require(scenes, function(){});
@@ -71,4 +73,5 @@ window.onload = function() {
 		//automatically play the loading scene
 		Crafty.scene("loading");
 	});
+
 };
